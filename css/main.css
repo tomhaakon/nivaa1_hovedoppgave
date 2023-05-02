@@ -1,51 +1,39 @@
-html {
-  background-color: #0d1b2a;
-}
 body {
+  background-color: #0d1b2a;
+
   margin: 0;
 }
-.h1text {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-}
 
-/*######################*/
-.menu-grid {
-  grid-area: menu;
-  position: fixed;
-  width: 200px;
-}
-.main-grid {
-  position: abs;
-  grid-area: box;
-  width: 100%;
-} /*
-.item2 {
-  grid-area: header;
-}
-.item3 {
-  grid-area: main;
-}
-.item4 {
-  grid-area: footer;
-}*/
-.frame-grid {
-  display: grid;
-  grid-template-areas: "menu box box box box box box";
-  gap: 1px;
-  background-color: transparent;
-} /*
+/* shift + alt + 8 {}*/
 .grid-container {
   display: grid;
-  grid-template-areas:
-    "header header header header header header"
-    "main main main main main main"
-    "main main main main main main"
-    "footer footer footer footer footer footer";
-  gap: 1px;
-  background-color: transparent;
-  opacity: 100%;
-}*/
-div {
-  background-color: #e0e1dd;
+  grid-template-columns: 120px auto;
+}
+.grid-content-box {
+  width: auto;
+  display: flex;
+  margin: 5px 5px 5px 0px;
+  background-color: #415a77;
+}
+.grid-menu {
+}
+.menu-top-logo {
+  height: 160px;
+  background-color: #415a77;
+  margin: 5px;
+}
+.menu-product {
+  height: 100px;
+  background-color: #415a77;
+  margin: 5px;
+}
+.menu-about-us {
+  height: 100px;
+  background-color: #415a77;
+  margin: 5px;
+}
+.menu-partners {
+  height: 100px;
+  background-color: #415a77;
+  margin: 5px;
 }
