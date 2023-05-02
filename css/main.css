@@ -1,0 +1,51 @@
+html {
+  background-color: #0d1b2a;
+}
+body {
+  margin: 0;
+}
+.h1text {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+/*######################*/
+.menu-grid {
+  grid-area: menu;
+  position: fixed;
+  width: 200px;
+}
+.main-grid {
+  position: abs;
+  grid-area: box;
+  width: 100%;
+} /*
+.item2 {
+  grid-area: header;
+}
+.item3 {
+  grid-area: main;
+}
+.item4 {
+  grid-area: footer;
+}*/
+.frame-grid {
+  display: grid;
+  grid-template-areas: "menu box box box box box box";
+  gap: 1px;
+  background-color: transparent;
+} /*
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header header header header header header"
+    "main main main main main main"
+    "main main main main main main"
+    "footer footer footer footer footer footer";
+  gap: 1px;
+  background-color: transparent;
+  opacity: 100%;
+}*/
+div {
+  background-color: #e0e1dd;
+}
