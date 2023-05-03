@@ -1,19 +1,18 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 body {
   background-color: #0d1b2a;
   font-family: Montserrat;
-  margin: 0;
 }
-/* shift + alt + 8 {}*/
+
 .gridContainer {
   display: grid;
   grid-template-columns: 120px auto;
 }
 .gridContentBox {
-  background-color: #172f482c;
   flex-direction: column;
   display: flex;
   width: auto;
@@ -30,9 +29,8 @@ body {
 .contentText {
   flex: 60%;
   color: white;
+  font-size: 2vw;
   font-family: Montserrat;
   font-style: normal;
-
-
   letter-spacing: 2px;
 }
