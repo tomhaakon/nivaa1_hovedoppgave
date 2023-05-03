@@ -1,0 +1,44 @@
+.footerBox {
+  color: white;
+  font-size: 1.5vw;
+}
+.footerSoMe {
+  /* background-color: transparent; */
+  background-image: repeating-linear-gradient(#112336, #0d1b2a);
+  height: 100px;
+  padding: 0px;
+  /* outline: solid 1px orange;
+  outline-offset: -1px; */
+  text-align: right;
+}
+
+.footerSoMe li {
+  padding: 10px;
+  list-style-type: none;
+  display: inline-block;
+  font-size: 20px;
+}
+
+.fa {
+  border-radius: 10%;
+  color: white;
+  text-decoration: none;
+}
+.fa:hover {
+  opacity: 100%;
+}
+.fa-facebook {
+  /* background: #3b5998; */
+  background: transparent;
+  opacity: 0.5;
+}
+.fa-twitter {
+  /* background: #55acee; */
+  background: transparent;
+  opacity: 0.5;
+}
+.fa-instagram {
+  /* background: #125688; */
+  background: transparent;
+  opacity: 0.5;
+}
