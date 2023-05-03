@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+.navbar {
+  list-style: none;
+  padding: 0px;
+}
+.navbar a {
+  color: white;
+  font-family: Montserrat;
+  text-decoration: none;
+}
+.navbarFont {
+  font-family: Montserrat;
+  font-style: normal;
+  margin: 10px;
+  font-size: 8px;
+  letter-spacing: 2px;
+}
+.navbar li:hover {
+  background-color: #415a77ad;
+}
+.navbarHome {
+  background-color: #415a77;
+  height: 100px;
+  margin: 5px;
+}
+.navbarTopLogo {
+  color: white;
+  height: 130px;
+  background-color: #415a7719;
+  margin: 5px;
+}
+.navbarActive {
+  background-color: #0d1b2a;
+  display: flex;
+  height: 100px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbarProduct {
+  background-color: #415a77;
+  display: flex;
+  height: 100px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.navbarAboutUs {
+  background-color: #415a77;
+  display: flex;
+  height: 100px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.navbarPartners {
+  background-color: #415a77;
+  display: flex;
+  height: 100px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
