@@ -1,22 +1,20 @@
-.footerBox {
-  color: white;
-  font-size: 1.5vw;
-}
 .footerSoMe {
-  /* background-color: transparent; */
-  background-image: repeating-linear-gradient(#112336, #0d1b2a);
-  height: 100px;
-  padding: 0px;
-  /* outline: solid 1px orange;
-  outline-offset: -1px; */
-  text-align: right;
+  width: 120px;
+  overflow: hidden;
+  color: white;
+  background-color: transparent;
+  position: fixed;
+  bottom: 0;
+  padding: 0;
 }
-
-.footerSoMe li {
-  padding: 10px;
+.footerSoMe ul {
+  padding: 0;
   list-style-type: none;
-  display: inline-block;
+}
+.footerSoMe li {
   font-size: 20px;
+  padding: 10px;
+  display: inline-block;
 }
 
 .fa {
