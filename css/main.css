@@ -15,20 +15,22 @@ body {
   flex-direction: column;
   display: flex;
   width: auto;
-  margin-top: 5vw;
-  margin-left: 50px;
+  padding-top: 50px;
+  padding-left: 10vw;
+  padding-right: 10vw;
 }
 .contentHeadline {
   flex: 10%;
-  font-size: 5vw;
+  font-size: 2vw;
   text-decoration: underline solid 1px;
   text-underline-offset: 30px;
   color: white;
 }
 .contentText {
+  padding-top: 50px;
   flex: 60%;
-  color: white;
-  font-size: 2vw;
+  color: #778da9;
+  font-size: 1vw;
   font-family: Montserrat;
   font-style: normal;
   letter-spacing: 2px;
