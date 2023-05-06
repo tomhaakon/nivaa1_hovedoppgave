@@ -39,8 +39,8 @@
   padding: 10px;
   display: inline-block;
 }
-.contentFooter p {
-  margin-top: 0px;
+.contentFooter {
+  margin-top: 15px;
   bottom: 0;
-  font-size: 20vw;
+  color: #ffffff;
 }
