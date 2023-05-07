@@ -40,7 +40,8 @@
   display: inline-block;
 }
 .contentFooter {
+  font-size: 1vw;
   margin-top: 15px;
   bottom: 0;
-  color: #ffffff;
+  color: #778da9;
 }
