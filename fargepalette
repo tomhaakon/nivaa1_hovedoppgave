@@ -1,5 +1,5 @@
-#e0e1dd -lysgrå #778da9 - lysblå #415a77 - mellomblå #1b263b - mellommørk #0d1b2a -
-mørk blå
+#e0e1dd -lysgrå #778da9 - lysblå #415a77 - mellomblå #1b263b - mellommørk
+#0d1b2a - mørk blå
 
 <!-- <nav>
       <ul>
@@ -10,4 +10,22 @@ mørk blå
       </ul>
     </nav> -->
 
-/* shift + alt + 8 {}*/
+/* shift + alt + 8 {}*/ const valuesCards = [ { image: '../img/image1.png',
+title: 'title 1', content: 'super content 1', }, { image: '../img/image2.png',
+title: 'title 2', content: 'super content 2' }, { image: '../img/image-3.png',
+title: 'title3', content: 'blablablablbalbalbabla blablaba' }, ]
+valuesCards.map(card=> { var cardDiv = document.createElement('div');
+cardDiv.innerHTML = `
+<div class="product-header">
+  <img src="${card.image}" />
+</div>
+<div class="product-content">
+  <h4>${card.title}</h4>
+  <p>${card.content}</p>
+</div>
+<button class="info-button">+ info</button>`
+document.getElementsByClassName('products-cards')[0].appendChild(cardDiv); })
+
+<div id="products-cards-container">
+  <div class="products-cards"></div>
+</div>
