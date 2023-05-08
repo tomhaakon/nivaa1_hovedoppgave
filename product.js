@@ -50,16 +50,15 @@ products.forEach((product, index) => {
   console.log(index);
   cardDiv.innerHTML += `
   <div class="cardFrame">
-    <div>
+    <div class="img-container">
         <img src="${product.image}" alt="" class="product-img">
-    </div>
-    <div class="product-info">
-        <p>${product.content}</p>
     </div>
     <div class="product-title">
         ${product.title}
     </div>
-    <a href="#" class="buy">Buy Now</a>
+    <div class="product-info">
+    <p>${product.content}</p>
+</div>
   </div>
     `;
 });

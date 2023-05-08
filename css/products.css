@@ -1,12 +1,15 @@
 #cardBox {
+  /* rammen rundt hvert kort */
   border: 1px solid red;
 
-  /* justify-content: center;
-  align-items: center; */
   /* min-height: 100vh; */
+  display: flex;
+  flex-direction: row;
+  text-align: center;
 }
-.cardFrame {
-  /* CARD */
+#cardBox .cardFrame {
+  margin: 0;
+  border: 1px solid red;
   position: relative;
   width: 320px;
   height: 480px;
@@ -15,46 +18,35 @@
   background-color: #1b263b;
   margin-right: 10px;
 }
-/*BILDE*/
-.cardFrame .product-img {
+#cardBox .cardFrame .img-container {
+  border: 1px solid red;
   position: relative;
-  justify-content: center;
-  align-items: center;
+  height: 70%;
   margin: auto;
-  width: auto;
-  display: flex;
-  z-index: 0;
-  height: 20vw;
+  width: max-content;
 }
+/*BILDE*/
+#cardBox .cardFrame .product-img {
+  margin-top: 8vw;
+  height: 200px;
+  border: 1px solid red;
+}
+
 .cardFrame .product-title {
+  border: 1px solid red;
+  font-size: 24px;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.cardFrame .product-info {
+  border: 1px solid red;
   font-size: 18px;
   z-index: 1;
   color: rgb(178, 172, 172);
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 1px;
-}
-.cardFrame .product-info {
-  font-size: 24px;
-  color: white;
-  font-weight: 700;
-  letter-spacing: 1px;
-}
-.cardFrame::before {
-  z-index: 0;
-  content: "HEI";
-  position: absolute;
-  top: -50%;
-  width: 100%;
-  height: 100%;
-  background: #0d1b2a;
-  transform: skewY(345deg);
-  transition: 0.5s;
-}
-
-.cardFrame:hover::before {
-  top: -70%;
-  transform: skewY(390deg);
 }
 .cardFrame::after {
   content: "PRODUCT";
