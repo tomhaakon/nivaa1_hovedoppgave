@@ -1,0 +1,47 @@
+.modalContact {
+  display: none; /* Hidden by default */
+  background: rgba(85, 118, 155, 0.2);
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2px);
+}
+.modalContact .modal-content {
+  border-radius: 10px;
+  border: 1px solid rgba(65, 90, 119, 0.1);
+  background: linear-gradient(
+    0deg,
+    rgba(67, 102, 148, 0.2) 0%,
+    rgba(13, 27, 42, 0.2) 80%
+  );
+  width: 48vw; /* Full width */
+  height: 35vw; /* Full height */
+  top: 150px;
+  left: 220px;
+  position: fixed;
+  background-color: rgba(13, 27, 42, 0.7);
+  backdrop-filter: blur(4px);
+  font-weight: 700;
+  color: #ffffff;
+  overflow: hidden;
+}
+/* The Close Button */
+.modalContact .modal-content .close {
+  color: #aaaaaa;
+  position: relative;
+  width: fit-content;
+  left: 95%;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.modalContact .modal-content .close:hover,
+.modalContact .modal-content .close:focus {
+  color: #595959;
+  text-decoration: none;
+  cursor: pointer;
+}
