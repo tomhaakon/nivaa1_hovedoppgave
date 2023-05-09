@@ -12,42 +12,37 @@
   border-radius: 5px;
   margin: 0vw 2vw 2vw 0vw;
 }
-
 #inputCardFrames .cardFrame {
-  border: 1px solid #ffffff22;
-  background-color: #282c34;
+  border: 1px solid #8a8a8a04;
+  background-color: rgb(65, 90, 119);
   background: linear-gradient(
     0deg,
-    rgba(40, 44, 52, 1) 0%,
-    rgba(13, 27, 42, 0.5) 100%
+    rgba(65, 90, 119, 0.3) 0%,
+    rgba(13, 27, 42, 0) 100%
   );
-  box-shadow: 0 7px 20px 5px #00000088;
-  border-radius: 0.7rem;
+  box-shadow: 0 7px 20px 5px #0000002a;
   backdrop-filter: blur(7px);
   -webkit-backdrop-filter: blur(7px);
   overflow: hidden;
-  transition: 0.5s all;
+  transition: 2s all;
 }
 
 #inputCardFrames .cardFrame:hover {
-  background-color: #282c34;
   background: linear-gradient(
     0deg,
-    rgba(40, 44, 52, 1) 0%,
-    rgba(13, 27, 42, 0.5) 100%
+    rgba(65, 90, 119, 1) 0%,
+    rgba(13, 27, 42, 0) 100%
   );
-  box-shadow: 0 7px 20px 5px #00000088;
-  border-radius: 0.7rem;
+  box-shadow: 0 7px 20px 5px #000000c0;
   backdrop-filter: blur(7px);
-  -webkit-backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(20px);
   overflow: hidden;
   transition: 0.5s all;
-  background: rgba(80, 84, 111, 0.15);
-  box-shadow: 0 8px 32px 0 rgba(48, 53, 95, 0.1);
+  background: rgba(85, 118, 155, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(189, 196, 255, 0.1);
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(120, 129, 142, 0.3);
-  border-radius: 1rem;
+  border: 1px solid rgba(74, 130, 214, 0.3);
   z-index: 10;
   color: whitesmoke;
 }

@@ -1,0 +1,20 @@
+.aboutContainer {
+  display: grid;
+  width: 400px;
+}
+.aboutContainer .aboutPicture img {
+  border-radius: 8px;
+  /* mix-blend-mode: exclusion; */
+  mix-blend-mode: lighten;
+}
+.aboutContainer .aboutText {
+  width: fit-content;
+  margin: 20px 0px 0px 0px;
+}
+.aboutText h4 {
+  color: #8fa8c8;
+  font-weight: 700;
+  letter-spacing: 5px;
+  padding-bottom: 10px;
+  padding-top: 20px;
+}
