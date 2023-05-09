@@ -36,7 +36,7 @@ const products = [
     id: 5,
   },
   {
-    image: "img/product_7.png",
+    image: "img/product_2.png",
     title: "Product 7",
     content: "info about product",
     id: 6,

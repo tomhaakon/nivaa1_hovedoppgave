@@ -12,26 +12,45 @@ body {
   grid-template-columns: 120px auto;
 }
 .gridContentBox {
-  border: 1px solid rgb(255, 150, 150);
+  /* border: 1px solid rgb(255, 150, 150); */
   width: auto;
   padding-top: 50px;
-  padding-left: 10vw;
-  padding-right: 10vw;
+  padding-left: 7vw;
 }
 .gridContentBox .contentHeadline {
-  font-size: 2vw;
+  font-size: 30px;
   color: white;
 }
 .gridContentBox .contentText {
-  padding-top: 50px;
-  margin-bottom: 50px;
-  flex: 60%;
   color: #778da9;
-  font-size: 1vw;
+  font-size: 15px;
   font-family: Montserrat;
   font-style: normal;
   letter-spacing: 2px;
 }
 .gridContentBox .flexitup {
   display: flex;
+}
+hr.gradient {
+  height: 1px;
+  border: none;
+  border-radius: 6px;
+  background: linear-gradient(
+    90deg,
+    rgb(17, 35, 54) 0%,
+    rgba(65, 90, 119, 0.445) 50%,
+    rgb(17, 35, 54) 100%
+  );
+}
+hr.divline {
+  height: 1px;
+  margin: 30px 30px 30px;
+  border: none;
+  border-radius: 6px;
+  background: linear-gradient(
+    90deg,
+    rgb(17, 35, 54) 0%,
+    rgba(65, 90, 119, 0.445) 50%,
+    rgb(17, 35, 54) 100%
+  );
 }

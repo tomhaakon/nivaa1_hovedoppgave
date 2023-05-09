@@ -1,101 +1,58 @@
-.cardFrame {
-  margin: 0;
-  border: 1px solid rgb(0, 255, 26);
-  position: relative;
-  width: 320px;
-  height: 480px;
-  overflow: hidden;
-  border-radius: 20px;
-  background-color: #1b263b;
-  margin-right: 10px;
-}
 #inputCardFrames {
   display: flex;
+  flex-wrap: wrap;
+}
+#inputCardFrames .cardFrame {
+  text-align: center;
+  /* border: 1px solid rgb(0, 255, 26); */
+  width: 200px;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 5px;
+  background-color: #1b263b;
+  margin: 0vw 2vw 2vw 0vw;
 }
 
-#cardBox .cardFrame .img-container {
-  border: 1px solid red;
-  position: relative;
+#inputCardFrames .cardFrame {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+#inputCardFrames .cardFrame:hover {
+  background-color: #778da9a5;
+  -webkit-transition: background-color 1s ease-out;
+  -moz-transition: background-color 1s ease-out;
+  -o-transition: background-color 1s ease-out;
+  -o-transition: color 1s ease-out;
+  transition: background-color 2s ease-out;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+/* rammen bildet skal inn i*/
+#inputCardFrames .cardFrame .img-container {
+  /* border: 1px solid rgb(255, 204, 0); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 70%;
-  margin: auto;
-  width: max-content;
+}
+/* selve bildet */
+#inputCardFrames .cardFrame .img-container .product-img {
+  height: 130px;
+  /* border: 1px solid rgb(47, 0, 255); */
 }
 
-#cardBox .cardFrame .product-img {
-  margin-top: 8vw;
-  height: 200px;
-  border: 1px solid red;
-}
-
-.cardFrame .product-title {
-  border: 1px solid red;
-  font-size: 24px;
+#inputCardFrames .cardFrame .product-title {
+  /* border: 1px solid red; */
+  font-size: 15px;
   color: white;
+
   font-weight: 700;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 }
-.cardFrame .product-info {
-  border: 1px solid red;
-  font-size: 18px;
-  z-index: 1;
+#inputCardFrames .cardFrame .product-info {
+  /* border: 1px solid red; */
+  padding: 10px;
+  font-size: 10px;
   color: rgb(178, 172, 172);
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-.cardFrame::after {
-  content: "PRODUCT";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  font-weight: 600;
-  font-size: 6em;
-  color: rgba(0, 0, 0, 0.1);
-} 
-
-/* 
-.cardFrame .price {
-  font-size: 24px;
-  color: white;
-  font-weight: 700;
-  letter-spacing: 1px;
-}
-.cardFrame:hover .buy {
-  top: 0;
-  opacity: 1;
-}
-
-
-
-.cardFrame .product-content .price {
-  font-size: 24px;
-  color: white;
-  font-weight: 700;
-  letter-spacing: 1px;
-}
-
-.cardFrame .product-content .buy {
-  position: relative;
-  top: 100px;
-  opacity: 0;
-  padding: 10px 30px;
-  margin-top: 15px;
-  color: #000000;
-  text-decoration: none;
-  background: #ffce00;
-  border-radius: 30px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  transition: 0.5s;
-}
-
-.mouse {
-  height: 300px;
-  width: auto;
-} */
-
-/*
-cardImg
-cardTitle
-cardContent
-*/

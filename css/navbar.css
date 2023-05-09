@@ -107,14 +107,3 @@
   opacity: 0.7;
   /* background-color: #142a41; */
 }
-hr.gradient {
-  height: 1px;
-  border: none;
-  border-radius: 6px;
-  background: linear-gradient(
-    90deg,
-    rgb(17, 35, 54) 0%,
-    rgba(65, 90, 119, 0.445) 50%,
-    rgb(17, 35, 54) 100%
-  );
-}
