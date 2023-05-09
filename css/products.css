@@ -2,6 +2,7 @@
   display: flex;
   flex-wrap: wrap;
 }
+/* TESTING*/
 #inputCardFrames .cardFrame {
   text-align: center;
   /* border: 1px solid rgb(0, 255, 26); */
@@ -9,21 +10,43 @@
   height: 250px;
   overflow: hidden;
   border-radius: 5px;
-  background-color: #1b263b;
+  background-color: ;
   margin: 0vw 2vw 2vw 0vw;
 }
 
 #inputCardFrames .cardFrame {
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  background: #1b263b;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  z-index: 10;
+  color: whitesmoke;
 }
 #inputCardFrames .cardFrame:hover {
-  background-color: #778da9a5;
-  -webkit-transition: background-color 1s ease-out;
-  -moz-transition: background-color 1s ease-out;
-  -o-transition: background-color 1s ease-out;
-  -o-transition: color 1s ease-out;
-  transition: background-color 2s ease-out;
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  background-color: #282c34;
+  background: linear-gradient(
+    0deg,
+    rgba(40, 44, 52, 1) 0%,
+    rgba(17, 0, 32, 0.5) 100%
+  );
+  box-shadow: 0 7px 20px 5px #00000088;
+  border-radius: 0.7rem;
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  overflow: hidden;
+  transition: 0.5s all;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 1rem;
+
+  z-index: 10;
+  color: whitesmoke;
 }
 /* rammen bildet skal inn i*/
 #inputCardFrames .cardFrame .img-container {
