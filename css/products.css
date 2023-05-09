@@ -1,15 +1,6 @@
-#cardBox {
-  /* rammen rundt hvert kort */
-  border: 1px solid red;
-
-  /* min-height: 100vh; */
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-}
-#cardBox .cardFrame {
+.cardFrame {
   margin: 0;
-  border: 1px solid red;
+  border: 1px solid rgb(0, 255, 26);
   position: relative;
   width: 320px;
   height: 480px;
@@ -18,6 +9,10 @@
   background-color: #1b263b;
   margin-right: 10px;
 }
+#inputCardFrames {
+  display: flex;
+}
+
 #cardBox .cardFrame .img-container {
   border: 1px solid red;
   position: relative;
@@ -25,7 +20,7 @@
   margin: auto;
   width: max-content;
 }
-/*BILDE*/
+
 #cardBox .cardFrame .product-img {
   margin-top: 8vw;
   height: 200px;
@@ -56,7 +51,7 @@
   font-weight: 600;
   font-size: 6em;
   color: rgba(0, 0, 0, 0.1);
-}
+} 
 
 /* 
 .cardFrame .price {

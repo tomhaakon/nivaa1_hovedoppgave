@@ -44,7 +44,7 @@ const products = [
 ];
 // productCards
 
-const cardDiv = document.getElementById("productContainer");
+const cardDiv = document.getElementById("inputCardFrames");
 
 products.forEach((product, index) => {
   console.log(index);
