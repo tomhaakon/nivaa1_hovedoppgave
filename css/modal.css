@@ -18,10 +18,12 @@
     rgba(67, 102, 148, 0.2) 0%,
     rgba(13, 27, 42, 0.2) 80%
   );
-  width: 48vw; /* Full width */
-  height: 35vw; /* Full height */
+  width: 35vw;
+  height: auto;
   top: 150px;
   left: 220px;
+  padding-bottom: 30px;
+  padding-top: 10px;
   position: fixed;
   background-color: rgba(13, 27, 42, 0.7);
   backdrop-filter: blur(4px);
@@ -30,18 +32,60 @@
   overflow: hidden;
 }
 /* The Close Button */
-.modalContact .modal-content .close {
+.modalContact .modal-content .close,
+.UsrClose,
+.RegClose {
+  cursor: pointer;
   color: #aaaaaa;
-  position: relative;
-  width: fit-content;
-  left: 95%;
-  font-size: 28px;
+  position: absolute;
+  left: 93%;
+  top: 0%;
+  font-size: 40px;
   font-weight: bold;
 }
 
-.modalContact .modal-content .close:hover,
-.modalContact .modal-content .close:focus {
+.close:hover,
+.close:focus,
+.RegClose:hover,
+.RegClose:focus,
+.UsrClose:hover,
+.UsrClose:focus {
   color: #595959;
   text-decoration: none;
   cursor: pointer;
+}
+.container {
+  border-radius: 5px;
+  padding: 20px;
+}
+span.link {
+  font-size: 12px;
+  text-decoration: none;
+  float: left;
+  color: #98a8cc;
+  padding: 5px;
+}
+span.link a {
+  text-decoration: none;
+  color: #ffffff;
+}
+span.link a:hover {
+  text-decoration: none;
+  color: #b4d5ff;
+  cursor: pointer;
+}
+.reg button {
+  background-color: #415a7728;
+  color: white;
+  padding: 10px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.reg {
+  float: right;
+}
+.reg button:hover {
+  background-color: rgba(89, 97, 145, 0.2);
 }

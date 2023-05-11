@@ -4,7 +4,6 @@
 }
 .aboutContainer .aboutPicture img {
   border-radius: 8px;
-  /* mix-blend-mode: exclusion; */
   mix-blend-mode: lighten;
 }
 .aboutContainer .aboutText {

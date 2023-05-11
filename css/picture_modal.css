@@ -8,12 +8,14 @@
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  background-color: rgba(0, 0, 0, 0.5); /* Black w/ opacity */
 }
 
 /* Modal Content */
 .modal-content {
-  margin: auto;
+  position: relative;
+  left: 15%;
+  top: 2%;
   height: min-content;
   width: min-content;
   z-index: 1;
@@ -24,9 +26,9 @@
   z-index: 2;
   color: #aaaaaa;
   position: relative;
-  left: 95%;
-  top: 28px;
-  font-size: 28px;
+  left: 93%;
+  top: 40px;
+  font-size: 40px;
   font-weight: bold;
 }
 
