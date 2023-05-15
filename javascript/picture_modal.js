@@ -1,17 +1,17 @@
-const modal = document.getElementById("myModal");
-const btn = document.getElementById("aboutPic");
-const span = document.getElementsByClassName("close")[0];
+const PicModal = document.getElementById("Pic-Modal");
+const PicBtn = document.getElementById("aboutPic");
+const PicSpan = document.getElementsByClassName("Pic-Close")[0];
 
-btn.onclick = function () {
-  modal.style.display = "block";
+PicBtn.onclick = function () {
+  PicModal.style.display = "block";
 };
 
-span.onclick = function () {
-  modal.style.display = "none";
+PicSpan.onclick = function () {
+  PicModal.style.display = "none";
 };
 
 window.onclick = function (event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
+  if (event.target == PicModal) {
+    PicModal.style.display = "none";
   }
 };

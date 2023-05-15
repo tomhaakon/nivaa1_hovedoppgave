@@ -32,9 +32,10 @@
   overflow: hidden;
 }
 /* The Close Button */
-.modalContact .modal-content .close,
+.modalContact .modal-content .ContactClose,
+.Pic-Close,
 .UsrClose,
-.RegClose {
+.RegFormClose {
   cursor: pointer;
   color: #aaaaaa;
   position: absolute;
@@ -46,8 +47,8 @@
 
 .close:hover,
 .close:focus,
-.RegClose:hover,
-.RegClose:focus,
+.RegFormClose:hover,
+.RegFormClose:focus,
 .UsrClose:hover,
 .UsrClose:focus {
   color: #595959;

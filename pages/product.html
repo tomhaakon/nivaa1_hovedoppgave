@@ -15,6 +15,7 @@
     <link rel="stylesheet" type="text/css" href="../css/footer.css" />
     <link rel="stylesheet" type="text/css" href="../css/modal.css" />
     <link rel="stylesheet" type="text/css" href="../css/contactForm.css" />
+    <link rel="stylesheet" type="text/css" href="../css/login_form.css" />
     <link rel="icon" type="image/x-icon" href="../img/seedling.png" />
 
     <meta charset="UTF-8" />
@@ -51,8 +52,7 @@
               </i>
             </li>
           </a>
-
-          <li class="navbarContact" id="openModal">
+          <li class="navbarContact" id="OpenContactModal">
             <i class="fas fa-info-circle fa-2x" style="color: white">
               <p class="navbarFont">CONTACT</p>
             </i>
@@ -60,16 +60,11 @@
 
           <hr class="gradient" />
           <div class="navbarGradient">
-            <a href="partners.html">
-              <li class="navbarPartners">
-                <p class="navbarLink">PARTNERS</p>
-              </li>
-            </a>
-            <a href="user.html">
-              <li class="navbarLogin">
-                <p class="navbarLink">LOGIN</p>
-              </li>
-            </a>
+            <button class="navbarPartners navbarFont">PARTNERS</button>
+
+            <button class="navbarLogin navbarFont" id="UsrOpenModal">
+              LOG IN
+            </button>
           </div>
         </ul>
       </nav>
@@ -96,7 +91,7 @@
         </nav>
         <div id="modalContainer" class="modalContact">
           <div class="modal-content">
-            <span class="close">&times;</span>
+            <span class="ContactClose">&times;</span>
             <div class="contactContainer" style="display: flex">
               <div class="container">
                 <p>
@@ -104,7 +99,7 @@
                 </p>
 
                 <hr class="divline" />
-                <form action="#">
+                <form action="../index.html">
                   <label for="fname">First Name</label>
                   <input
                     type="text"
@@ -144,7 +139,129 @@
         <li><a href="#" class="fa fa-instagram"></a></li>
       </ul>
     </nav>
+    <div id="modalContainer" class="modalContact">
+      <div class="modal-content">
+        <span class="ContactClose">&times;</span>
+        <div class="container">
+          <div class="contentHeadline">
+            Contact us for more information by filling the inputs below.
+          </div>
+          <hr class="divline" />
+          <form action="#">
+            <label for="fname">First Name</label>
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="Your name.."
+            />
+
+            <label for="lname">Last Name</label>
+            <input
+              type="text"
+              id="lname"
+              name="lastname"
+              placeholder="Your last name.."
+            />
+
+            <label for="subject">Subject</label>
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Write something.."
+              style="height: 50px"
+            ></textarea>
+
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- USERMODAL -->
+    <div id="userModal" class="modalContact">
+      <div class="modal-content">
+        <span class="UsrClose">&times;</span>
+
+        <!-- loginform her -->
+        <div class="container">
+          <div class="contentHeadline">Log in to your account</div>
+          <hr class="divline" />
+          <label for="uname"><b>Username</b></label>
+          <input
+            type="text"
+            placeholder="Enter Username"
+            name="uname"
+            required
+          />
+
+          <label for="psw"><b>Password</b></label>
+          <input
+            type="password"
+            placeholder="Enter Password"
+            name="psw"
+            required
+          />
+
+          <a href="../index.html"><input type="submit" value="Log in" /></a>
+          <span class="link"
+            >Dont have an account?
+            <a id="RegOpenModal"> Please Register here</a>
+          </span>
+          <br /><br />
+          <span class="link"
+            >Forgot password?<a href="../index.html"> Click here</a></span
+          >
+        </div>
+      </div>
+    </div>
+    <!-- REGUSTER MODAL -->
+    <div id="RegModal" class="modalContact">
+      <div class="modal-content">
+        <span class="RegFormClose" id="RClose">&times;</span>
+        <!-- loginform her -->
+        <div class="container">
+          <div class="contentHeadline">Sign Up</div>
+          <!-- REGISTERFORM HERE -->
+
+          <hr class="divline" />
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" required />
+
+          <label for="psw"><b>Password</b></label>
+          <input
+            type="password"
+            placeholder="Enter Password"
+            name="psw"
+            required
+          />
+
+          <label for="psw-repeat"><b>Repeat Password</b></label>
+          <input
+            type="password"
+            placeholder="Repeat Password"
+            name="psw-repeat"
+            required
+          />
+
+          <span class="link">
+            By creating an account you agree to our
+            <a href="../index.html">Terms & Privacy</a>
+          </span>
+          <span class="link"
+            >Allready have an account?
+            <a id="UsrOpenModalButClose"> Please Log in here</a>
+          </span>
+          <br /><br />
+          <br /><br />
+          <div class="reg">
+            <button type="button" id="RegCancel">Cancel</button>
+            <a href="../index.html"><button type="submit">Register</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
+
   <script type="text/javascript" src="../javascript/modal.js"></script>
   <script type="text/javascript" src="../javascript/product.js"></script>
 </html>

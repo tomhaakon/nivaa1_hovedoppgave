@@ -1,66 +1,66 @@
 /* CONTACT MODAL */
-const modal = document.getElementById("modalContainer");
-const btn = document.getElementById("openModal");
+const ContactModal = document.getElementById("modalContainer");
+const ContactBtn = document.getElementById("OpenContactModal");
 
-const span = document.getElementsByClassName("close")[0];
+const ContactSpan = document.getElementsByClassName("ContactClose")[0];
 
-btn.onclick = function () {
-  modal.style.display = "block";
+ContactBtn.onclick = function () {
+  ContactModal.style.display = "block";
 };
 
-span.onclick = function () {
-  modal.style.display = "none";
+ContactSpan.onclick = function () {
+  ContactModal.style.display = "none";
 };
 
 window.onclick = function (event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
+  if (event.target == ContactModal) {
+    ContactModal.style.display = "none";
   }
 };
 /*USER MODAL */
-const Usr_modal = document.getElementById("userModal");
-const Usr_btn = document.getElementById("UsrOpenModal");
-const Usr_btn_oc = document.getElementById("UsrOpenModalButClose");
+const UsrModal = document.getElementById("userModal");
+const UsrBtn = document.getElementById("UsrOpenModal");
+const UsrBtnOc = document.getElementById("UsrOpenModalButClose");
 
-const Usr_span = document.getElementsByClassName("UsrClose")[0];
+const UsrSpan = document.getElementsByClassName("UsrClose")[0];
 
-Usr_btn.onclick = function () {
-  Usr_modal.style.display = "block";
+UsrBtn.onclick = function () {
+  UsrModal.style.display = "block";
 };
 
-Usr_span.onclick = function () {
-  Usr_modal.style.display = "none";
+UsrSpan.onclick = function () {
+  UsrModal.style.display = "none";
 };
-Usr_btn_oc.onclick = function () {
-  Reg_modal.style.display = "none";
-  Usr_modal.style.display = "block";
+UsrBtnOc.onclick = function () {
+  RModal.style.display = "none";
+  UsrModal.style.display = "block";
 };
 
 window.onclick = function (event) {
-  if (event.target == User_modal) {
-    Usr_modal.style.display = "none";
+  if (event.target == UsrModal) {
+    UsrModal.style.display = "none";
   }
 };
 /*REGISTER MODAL */
-const Reg_modal = document.getElementById("RegModal");
-const Reg_btn = document.getElementById("RegOpenModal");
+const RModal = document.getElementById("RegModal");
+const RegBtn = document.getElementById("RegOpenModal");
 
-const Reg_span = document.getElementById("RClose");
-const Reg_cancel = document.getElementById("RegCancel");
+const RegSpan = document.getElementById("RClose");
+const RegCancel = document.getElementById("RegCancel");
 
-Reg_btn.onclick = function () {
-  Usr_modal.style.display = "none";
-  Reg_modal.style.display = "block";
+RegBtn.onclick = function () {
+  UsrModal.style.display = "none";
+  RModal.style.display = "block";
 };
-Reg_span.onclick = function () {
-  Reg_modal.style.display = "none";
+RegSpan.onclick = function () {
+  RModal.style.display = "none";
 };
-Reg_cancel.onclick = function () {
-  Reg_modal.style.display = "none";
+RegCancel.onclick = function () {
+  RModal.style.display = "none";
 };
 
 window.onclick = function (event) {
-  if (event.target == Reg_modal) {
-    Reg_modal.style.display = "none";
+  if (event.target == RModal) {
+    RModal.style.display = "none";
   }
 };
