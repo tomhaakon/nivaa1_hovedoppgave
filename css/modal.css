@@ -34,6 +34,7 @@
 /* The Close Button */
 .modalContact .modal-content .ContactClose,
 .Pic-Close,
+.PClose,
 .UsrClose,
 .RegFormClose {
   cursor: pointer;
@@ -47,6 +48,8 @@
 
 .close:hover,
 .close:focus,
+.PClose:hover,
+.PClose:focus,
 .RegFormClose:hover,
 .RegFormClose:focus,
 .UsrClose:hover,
