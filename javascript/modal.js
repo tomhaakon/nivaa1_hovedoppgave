@@ -1,8 +1,18 @@
 /* CONTACT MODAL */
+
 const ContactModal = document.getElementById("modalContainer");
 const ContactBtn = document.getElementById("OpenContactModal");
-
 const ContactSpan = document.getElementsByClassName("ContactClose")[0];
+
+const UsrModal = document.getElementById("userModal");
+const UsrBtn = document.getElementById("UsrOpenModal");
+const UsrBtnOc = document.getElementById("UsrOpenModalButClose");
+const UsrSpan = document.getElementsByClassName("UsrClose")[0];
+
+const RModal = document.getElementById("RegModal");
+const RegBtn = document.getElementById("RegOpenModal");
+const RegSpan = document.getElementById("RClose");
+const RegCancel = document.getElementById("RegCancel");
 
 ContactBtn.onclick = function () {
   ContactModal.style.display = "block";
@@ -17,12 +27,8 @@ window.onclick = function (event) {
     ContactModal.style.display = "none";
   }
 };
-/*USER MODAL */
-const UsrModal = document.getElementById("userModal");
-const UsrBtn = document.getElementById("UsrOpenModal");
-const UsrBtnOc = document.getElementById("UsrOpenModalButClose");
 
-const UsrSpan = document.getElementsByClassName("UsrClose")[0];
+/*USER MODAL */
 
 UsrBtn.onclick = function () {
   UsrModal.style.display = "block";
@@ -41,12 +47,8 @@ window.onclick = function (event) {
     UsrModal.style.display = "none";
   }
 };
-/*REGISTER MODAL */
-const RModal = document.getElementById("RegModal");
-const RegBtn = document.getElementById("RegOpenModal");
 
-const RegSpan = document.getElementById("RClose");
-const RegCancel = document.getElementById("RegCancel");
+/*REGISTER MODAL */
 
 RegBtn.onclick = function () {
   UsrModal.style.display = "none";
@@ -64,4 +66,3 @@ window.onclick = function (event) {
     RModal.style.display = "none";
   }
 };
-

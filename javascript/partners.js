@@ -1,6 +1,6 @@
 const partnerContainer = document.querySelector(".partnerContainer");
 const partnerModal = document.querySelector("#PModal");
-
+const cardDiv = document.querySelector("#inputCardFrames");
 const partners = [
   {
     image: "../img/partner1.png",
@@ -44,7 +44,6 @@ const cardListener = () => {
 };
 
 const loopCards = () => {
-  const cardDiv = document.getElementById("inputCardFrames");
   cardDiv.innerHTML = "";
   partners.forEach((partner) => {
     cardDiv.innerHTML += `
@@ -71,7 +70,8 @@ const openModal = (partnerInfo) => {
   partnerContainer.innerHTML += `
   <div class="contentHeadline">${partnerInfo.title}</div>
   <hr class="divline" />
-  ${partnerInfo.content}
+ <p class="partnerText">${partnerInfo.content}</p><br>
+  <img src="${partnerInfo.image}" width="100px" alt="" class="product-img" style="filter: invert(1); float: right;">
   `;
 };
 

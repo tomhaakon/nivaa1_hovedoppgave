@@ -40,7 +40,7 @@
   cursor: pointer;
   color: #aaaaaa;
   position: absolute;
-  left: 93%;
+  left: 90%;
   top: 0%;
   font-size: 40px;
   font-weight: bold;
@@ -92,4 +92,14 @@ span.link a:hover {
 }
 .reg button:hover {
   background-color: rgba(89, 97, 145, 0.2);
+}
+.frem {
+  z-index: 10;
+}
+.partnerText {
+  color: #778da9;
+  font-size: 12px;
+  font-family: Montserrat;
+  font-style: normal;
+  letter-spacing: 2px;
 }
