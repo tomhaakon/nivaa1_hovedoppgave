@@ -1,3 +1,6 @@
+const partnerContainer = document.querySelector(".partnerContainer");
+const partnerModal = document.querySelector("#PModal");
+
 const partners = [
   {
     image: "../img/partner1.png",
@@ -31,39 +34,49 @@ const partners = [
   },
 ];
 
-const cardDiv = document.getElementById("inputCardFrames");
+const cardListener = () => {
+  const cardEvent = document.querySelectorAll(".cardFrame");
+  cardEvent.forEach((card, index) => {
+    card.addEventListener("click", () => {
+      openModal(partners[index]);
+    });
+  });
+};
 
-partners.forEach((partner, index) => {
-  console.log(index);
-  cardDiv.innerHTML += `
-    <div class="cardFrame">
-      <div class="img-container">
-          <img src="${partner.image}" alt="" class="product-img" style="filter: invert(1);">
+const loopCards = () => {
+  const cardDiv = document.getElementById("inputCardFrames");
+  cardDiv.innerHTML = "";
+  partners.forEach((partner) => {
+    cardDiv.innerHTML += `
+      <div class="cardFrame">
+        <div class="img-container">
+            <img src="${partner.image}" alt="" class="product-img" style="filter: invert(1);">
+        </div>
+        <div class="product-title">
+            ${partner.title}
+        </div>
+        <div class="product-info">
+        <p>${partner.content}</p>
+        </div>
       </div>
-      <div class="product-title">
-          ${partner.title}
-      </div>
-      <div class="product-info">
-      <p>${partner.content}</p>
-  </div>
-    </div>
-      `;
+        `;
+    cardListener();
+  });
+};
+
+loopCards();
+
+const openModal = (partnerInfo) => {
+  partnerModal.style.display = "block";
+  partnerContainer.innerHTML += `
+  <div class="contentHeadline">${partnerInfo.title}</div>
+  <hr class="divline" />
+  ${partnerInfo.content}
+  `;
+};
+
+const partnerSpan = document.querySelector(".PClose");
+partnerSpan.addEventListener("click", () => {
+  partnerModal.style.display = "none";
+  partnerContainer.innerHTML = "";
 });
-
-/*PARTNER */
-const PartnerModal = document.getElementById("PModal");
-const PartnerBtn = document.getElementById("POpen");
-const PartnerSpan = document.getElementsByClassName("PClose");
-
-PartnerBtn.onclick = function () {
-  /* åpne vindu */
-  PartnerModal.style.display = "block";
-};
-PartnerSpan.onclick = function () {
-  PartnerModal.style.display = "none";
-};
-window.onclick = function (event) {
-  if (event.target == PartnerModal) {
-    PartnerModal.style.display = "none";
-  }
-};
