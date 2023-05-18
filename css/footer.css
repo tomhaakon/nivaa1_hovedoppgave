@@ -44,4 +44,9 @@
   margin-top: 15px;
   bottom: 0;
   color: rgb(119, 141, 169);
+  padding-bottom: 20px;
+}
+.contentFooter img {
+  opacity: 0.5;
+  padding-right: 20px;
 }

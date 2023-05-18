@@ -24,7 +24,8 @@
   backdrop-filter: blur(7px);
   -webkit-backdrop-filter: blur(7px);
   overflow: hidden;
-  transition: 2s all;
+  transition: 1s all;
+  opacity: 0.7;
 }
 
 #inputCardFrames .cardFrame:hover {
@@ -45,6 +46,8 @@
   border: 1px solid rgba(74, 130, 214, 0.3);
   z-index: 10;
   color: whitesmoke;
+  filter: brightness(120%);
+  opacity: 1;
 }
 /* rammen bildet skal inn i*/
 #inputCardFrames .cardFrame .img-container {
@@ -58,6 +61,8 @@
 #inputCardFrames .cardFrame .img-container .product-img {
   height: 130px;
   /* border: 1px solid rgb(47, 0, 255); */
+}
+.product-img:hover {
 }
 
 #inputCardFrames .cardFrame .product-title {

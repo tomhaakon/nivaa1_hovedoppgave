@@ -51,7 +51,7 @@ products.forEach((product, index) => {
   cardDiv.innerHTML += `
   <div class="cardFrame">
     <div class="img-container" style="mix-blend-mode: overlay;">
-        <img src="${product.image}" alt="" class="product-img" style="filter: contrast(200%);">
+        <img src="${product.image}" alt="" class="product-img">
     </div>
     <div class="product-title">
         ${product.title}
